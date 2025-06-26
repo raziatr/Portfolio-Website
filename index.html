@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Razi's Website</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="is-preload">
+    <!-- Background Elements -->
+    <div class="bg-elements">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="shape-1"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header -->
+    <header class="modern-header">
+      <nav>
+        <div class="logo" data-aos="fade-down">
+          <span class="logo-text">Personal Website</span>
+        </div>
+        <div class="hamburger">
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links" data-aos="fade-down">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1 class="hero-title" data-aos="fade-right" data-aos-delay="100">
+          Hi, I'm <br />
+          <span class="text-gradient typing-container">
+            <span id="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </span>
+        </h1>
+        <p class="hero-subtitle" data-aos="fade-right" data-aos-delay="200">
+          Creative Developer & Tech Enthusiast👋
+        </p>
+        <div class="hero-btns" data-aos="fade-right" data-aos-delay="300">
+          <a href="#portfolio" class="btn primary-btn">My Projects</a>
+          <a href="#contact" class="btn secondary-btn">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="profile-img" data-aos="fade-left">
+        <img src="profile.jpg" alt="Profile" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-subtitle">Get to know me</div>
+      </div>
+
+      <div class="about-content">
+        <div class="about-img" data-aos="fade-right">
+          <img src="aboutme.jpg" alt="Profile" />
+        </div>
+        <div class="about-text" data-aos="fade-left">
+          <h3>Who am I?</h3>
+          <p>
+            I am a front-end web developer. I can provide clean code and pixel
+            perfect design. I also make the website more interactive with
+            animations. A responsive design makes the website accessible to all
+            users, regardless of their device.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <span>Name :</span>
+              <p>Fahrurrazi Athariq</p>
+            </div>
+            <div class="info-item">
+              <span>Nickname :</span>
+              <p>Razi</p>
+            </div>
+            <div class="info-item">
+              <span>Birth Date :</span>
+              <p>27 January 2006</p>
+            </div>
+            <div class="info-item">
+              <span>Address :</span>
+              <p>Perum Pemda Puak No.4B, Ranai, Natuna, Kepulauan Riau</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">My Services</h2>
+        <div class="section-subtitle">What I'm good at</div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Front-end</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="80%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3>UI/UX Design</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="95%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Mobile Development</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Back-end</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-width="80%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">My Projects</h2>
+        <div class="section-subtitle">Some of my latest projects</div>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-aos="flip-left">
+          <div class="portfolio-img">
+            <img src="project1.png" alt="Project 1" />
+            <div class="portfolio-overlay">
+              <h3>Drug Vending Machine</h3>
+              <p>UI/UX Design (Figma)</p>
+              <a
+                href="https://www.figma.com/proto/TN9G4Yqm7AQJkhgt7ECXDw/Medigo?node-id=1-4&t=NnEvhDVDMQsUkepi-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="portfolio-link"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-aos="flip-left" data-aos-delay="100">
+          <div class="portfolio-img">
+            <img src="project2.png" alt="Project 2" />
+            <div class="portfolio-overlay">
+              <h3>Rent Car Mobile App</h3>
+              <p>UI/UX Design (Figma)</p>
+              <a
+                href="https://www.figma.com/proto/yQR3deTmD7iVSBBBkqshj5/Luxury-Ride?node-id=0-1&t=HpOzlK8HcLmlAEIT-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="portfolio-link"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-aos="flip-left" data-aos-delay="100">
+          <div class="portfolio-img">
+            <img src="project3.png" alt="Project 3" />
+            <div class="portfolio-overlay">
+              <h3>Alien Game</h3>
+              <p>Program Concept (C)</p>
+              <a
+                href="https://github.com/raziatr/AOL-ALGOPRO-LAB/blob/main/AOL-LABSOCS.c"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="portfolio-link"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="section-subtitle">Send me a message</div>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>fahrurrazi.athariq@binus.ac.id</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <p>0813-1915-1900</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Bandung, Indonesia</p>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/raziatr_"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@razoyy"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a
+              href="https://spotify.app.link/?product=open&%24full_url=https%3A%2F%2Fopen.spotify.com%2Fuser%2Fwctwfk5ea95poxzo29tpogb6s%3Fsi%3Dv86YHfKYT7yv9gyQM2tjUg%26fbclid%3DPAZXh0bgNhZW0CMTEAAae-5NZkYjXku3sTdgZk8iWAFFuRdpEAyb3JnXTkNf19W7V6OCLaDwLeXutLwQ_aem_ObSnjGygY816NFQZKTfZgQ&%24fallback_url=https%3A%2F%2Fopen.spotify.com%2Fuser%2Fwctwfk5ea95poxzo29tpogb6s%3Fsi%3Dv86YHfKYT7yv9gyQM2tjUg%26fbclid%3DPAZXh0bgNhZW0CMTEAAae-5NZkYjXku3sTdgZk8iWAFFuRdpEAyb3JnXTkNf19W7V6OCLaDwLeXutLwQ_aem_ObSnjGygY816NFQZKTfZgQ%26nd%3D1&%24android_redirect_timeout=3000&feature=organic&fbclid=PAQ0xDSwLCaopleHRuA2FlbQIxMQABp77k1mRiNeS7exN2BmTyJYAUW5F2kQDJvcmddOQ1_X1btXo4ItoPAt5e60vB_aem_ObSnjGygY816NFQZKTfZgQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              ><i class="fab fa-spotify"></i
+            ></a>
+            <a
+              href="https://github.com/raziatr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/fahrurrazi-athariq-16229a32b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+
+        <form class="contact-form" data-aos="fade-left" id="contactForm">
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn primary-btn">Send Message</button>
+          <div id="formResponse" style="margin-top: 20px"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>;2025 Razi. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
