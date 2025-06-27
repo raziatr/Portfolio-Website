@@ -187,3 +187,30 @@ window.addEventListener("scroll", function () {
     }
   });
 });
+
+// Mobile Menu Toggle
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+if (hamburger && navLinks) {
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+
+    // Toggle body scroll when menu is open
+    if (navLinks.classList.contains("active")) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  });
+
+  // Close menu when clicking on a link
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navLinks.classList.remove("active");
+      document.body.style.overflow = "";
+    });
+  });
+}
